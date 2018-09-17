@@ -3,7 +3,18 @@
 <head>
     <script src="//unpkg.com/sunburst-chart"></script>
 
-    <style>body { margin: 0 }</style>
+    <style>body { margin: 0 }
+    .sunburst-viz text {
+        font-family: Roboto;
+
+    }
+    .sunburst-viz text .text-contour {
+  fill: none;
+  stroke: none;
+  stroke-width: 5;
+  stroke-linejoin: 'round';
+}
+</style>
 </head>
 <body>
 <div id="chart"></div>
@@ -16,20 +27,115 @@
             {
                 name: '1 Mana',
                 color: '#c1ca7d',
+                size: 1,
                 children: [
                     {
                         name: 'Red',
                         color: '#c06d6d',
-                        size: 1
+                        size: 1,
+                        children: [{
+                            name: 'Spells',
+                            color: 'orange',
+                            size: 1,
+                            children: [{
+                                name: 'First Blue Spell at 1 Mana',
+                                color: 'green',
+                                size: 1
+                            },
+                            ]
+                        }, {
+                            name: 'Improvements',
+                            color: 'blue',
+                            size: 1, 
+                            children: [{
+                                name: 'First Blue Improvement at 1 Mana',
+                                color: 'green',
+                                size: 1
+                            },
+                            ]
+                        }, {
+                            name: 'Creeps',
+                            color: 'orange',
+                            size: 1,
+                            children: [{
+                                name: 'First Blue Creep at 1 Mana',
+                                color: 'green',
+                                size: 1
+                            },
+                            ]
+                        },]
                     },
                     {
                         name: 'Black',
                         color: '#888888',
+                        size: 1,
+                        children: [{
+                            name: 'Spells',
+                            color: 'orange',
+                            size: 1,
+                            children: [{
+                                name: 'First Blue Spell at 1 Mana',
+                                color: 'green',
+                                size: 1
+                            },
+                            ]
+                        }, {
+                            name: 'Improvements',
+                            color: 'blue',
+                            size: 1, 
+                            children: [{
+                                name: 'First Blue Improvement at 1 Mana',
+                                color: 'green',
+                                size: 1
+                            },
+                            ]
+                        }, {
+                            name: 'Creeps',
+                            color: 'orange',
+                            size: 1,
+                            children: [{
+                                name: 'First Blue Creep at 1 Mana',
+                                color: 'green',
+                                size: 1
+                            },
+                            ]
+                        },]
                     },
                     {
                         name: 'Green',
                         color: '#62b46d',
-                        size: 1
+                        size: 1,
+                        children: [{
+                            name: 'Spells',
+                            color: 'orange',
+                            size: 1,
+                            children: [{
+                                name: 'First Blue Spell at 1 Mana',
+                                color: 'green',
+                                size: 1
+                            },
+                            ]
+                        }, {
+                            name: 'Improvements',
+                            color: 'blue',
+                            size: 1, 
+                            children: [{
+                                name: 'First Blue Improvement at 1 Mana',
+                                color: 'green',
+                                size: 1
+                            },
+                            ]
+                        }, {
+                            name: 'Creeps',
+                            color: 'orange',
+                            size: 1,
+                            children: [{
+                                name: 'First Blue Creep at 1 Mana',
+                                color: 'green',
+                                size: 1
+                            },
+                            ]
+                        },]
                     },
                     {
                         name: 'Blue',
@@ -38,30 +144,1080 @@
                         children: [{
                             name: 'Spells',
                             color: 'orange',
-                            size: 1
+                            size: 1,
+                            children: [{
+                                name: 'First Blue Spell at 1 Mana',
+                                color: 'green',
+                                size: 1
+                            },
+                            ]
                         }, {
                             name: 'Improvements',
                             color: 'blue',
+                            size: 1, 
                             children: [{
                                 name: 'First Blue Improvement at 1 Mana',
                                 color: 'green',
                                 size: 1
-                            }, {
-                                name: 'Second Blue Improvement at 1 Mana',
-                                color: 'pink',
+                            },
+                            ]
+                        }, {
+                            name: 'Creeps',
+                            color: 'orange',
+                            size: 1,
+                            children: [{
+                                name: 'First Blue Creep at 1 Mana',
+                                color: 'green',
                                 size: 1
                             },
                             ]
-                        }]
+                        },]
                     }],
             },
             {
                 name: '2 Mana',
                 color: 'gray',
                 children:[
+                {
+                        name: 'Red',
+                        color: '#c06d6d',
+                        size: 1,
+                        children: [{
+                            name: 'Spells',
+                            color: 'orange',
+                            size: 1,
+                            children: [{
+                                name: 'First Blue Spell at 1 Mana',
+                                color: 'green',
+                                size: 1
+                            },
+                            ]
+                        }, {
+                            name: 'Improvements',
+                            color: 'blue',
+                            size: 1, 
+                            children: [{
+                                name: 'First Blue Improvement at 1 Mana',
+                                color: 'green',
+                                size: 1
+                            },
+                            ]
+                        }, {
+                            name: 'Creeps',
+                            color: 'orange',
+                            size: 1,
+                            children: [{
+                                name: 'First Blue Creep at 1 Mana',
+                                color: 'green',
+                                size: 1
+                            },
+                            ]
+                        },]
+                    },
+                    {
+                        name: 'Black',
+                        color: '#888888',
+                        size: 1,
+                        children: [{
+                            name: 'Spells',
+                            color: 'orange',
+                            size: 1,
+                            children: [{
+                                name: 'First Blue Spell at 1 Mana',
+                                color: 'green',
+                                size: 1
+                            },
+                            ]
+                        }, {
+                            name: 'Improvements',
+                            color: 'blue',
+                            size: 1, 
+                            children: [{
+                                name: 'First Blue Improvement at 1 Mana',
+                                color: 'green',
+                                size: 1
+                            },
+                            ]
+                        }, {
+                            name: 'Creeps',
+                            color: 'orange',
+                            size: 1,
+                            children: [{
+                                name: 'First Blue Creep at 1 Mana',
+                                color: 'green',
+                                size: 1
+                            },
+                            ]
+                        },]
+                    },
+                    {
+                        name: 'Green',
+                        color: '#62b46d',
+                        size: 1,
+                        children: [{
+                            name: 'Spells',
+                            color: 'orange',
+                            size: 1,
+                            children: [{
+                                name: 'First Blue Spell at 1 Mana',
+                                color: 'green',
+                                size: 1
+                            },
+                            ]
+                        }, {
+                            name: 'Improvements',
+                            color: 'blue',
+                            size: 1, 
+                            children: [{
+                                name: 'First Blue Improvement at 1 Mana',
+                                color: 'green',
+                                size: 1
+                            },
+                            ]
+                        }, {
+                            name: 'Creeps',
+                            color: 'orange',
+                            size: 1,
+                            children: [{
+                                name: 'First Blue Creep at 1 Mana',
+                                color: 'green',
+                                size: 1
+                            },
+                            ]
+                        },]
+                    },
+                    {
+                        name: 'Blue',
+                        color: '#699bbc',
+                        size: 1,
+                        children: [{
+                            name: 'Spells',
+                            color: 'orange',
+                            size: 1,
+                            children: [{
+                                name: 'First Blue Spell at 1 Mana',
+                                color: 'green',
+                                size: 1
+                            },
+                            ]
+                        }, {
+                            name: 'Improvements',
+                            color: 'blue',
+                            size: 1, 
+                            children: [{
+                                name: 'First Blue Improvement at 1 Mana',
+                                color: 'green',
+                                size: 1
+                            },
+                            ]
+                        }, {
+                            name: 'Creeps',
+                            color: 'orange',
+                            size: 1,
+                            children: [{
+                                name: 'First Blue Creep at 1 Mana',
+                                color: 'green',
+                                size: 1
+                            },
+                            ]
+                        },]
+                    }
                 ]
-            }
-
+            },
+            {
+                name: '3 Mana',
+                color: '#c1ca7d',
+                children: [
+                    {
+                        name: 'Red',
+                        color: '#c06d6d',
+                        size: 1,
+                        children: [{
+                            name: 'Spells',
+                            color: 'orange',
+                            size: 1,
+                            children: [{
+                                name: 'First Blue Spell at 1 Mana',
+                                color: 'green',
+                                size: 1
+                            },
+                            ]
+                        }, {
+                            name: 'Improvements',
+                            color: 'blue',
+                            size: 1, 
+                            children: [{
+                                name: 'First Blue Improvement at 1 Mana',
+                                color: 'green',
+                                size: 1
+                            },
+                            ]
+                        }, {
+                            name: 'Creeps',
+                            color: 'orange',
+                            size: 1,
+                            children: [{
+                                name: 'First Blue Creep at 1 Mana',
+                                color: 'green',
+                                size: 1
+                            },
+                            ]
+                        },]
+                    },
+                    {
+                        name: 'Black',
+                        color: '#888888',
+                        size: 1,
+                        children: [{
+                            name: 'Spells',
+                            color: 'orange',
+                            size: 1,
+                            children: [{
+                                name: 'First Blue Spell at 1 Mana',
+                                color: 'green',
+                                size: 1
+                            },
+                            ]
+                        }, {
+                            name: 'Improvements',
+                            color: 'blue',
+                            size: 1, 
+                            children: [{
+                                name: 'First Blue Improvement at 1 Mana',
+                                color: 'green',
+                                size: 1
+                            },
+                            ]
+                        }, {
+                            name: 'Creeps',
+                            color: 'orange',
+                            size: 1,
+                            children: [{
+                                name: 'First Blue Creep at 1 Mana',
+                                color: 'green',
+                                size: 1
+                            },
+                            ]
+                        },]
+                    },
+                    {
+                        name: 'Green',
+                        color: '#62b46d',
+                        size: 1,
+                        children: [{
+                            name: 'Spells',
+                            color: 'orange',
+                            size: 1,
+                            children: [{
+                                name: 'First Blue Spell at 1 Mana',
+                                color: 'green',
+                                size: 1
+                            },
+                            ]
+                        }, {
+                            name: 'Improvements',
+                            color: 'blue',
+                            size: 1, 
+                            children: [{
+                                name: 'First Blue Improvement at 1 Mana',
+                                color: 'green',
+                                size: 1
+                            },
+                            ]
+                        }, {
+                            name: 'Creeps',
+                            color: 'orange',
+                            size: 1,
+                            children: [{
+                                name: 'First Blue Creep at 1 Mana',
+                                color: 'green',
+                                size: 1
+                            },
+                            ]
+                        },]
+                    },
+                    {
+                        name: 'Blue',
+                        color: '#699bbc',
+                        size: 1,
+                        children: [{
+                            name: 'Spells',
+                            color: 'orange',
+                            size: 1,
+                            children: [{
+                                name: 'First Blue Spell at 1 Mana',
+                                color: 'green',
+                                size: 1
+                            },
+                            ]
+                        }, {
+                            name: 'Improvements',
+                            color: 'blue',
+                            size: 1, 
+                            children: [{
+                                name: 'First Blue Improvement at 1 Mana',
+                                color: 'green',
+                                size: 1
+                            },
+                            ]
+                        }, {
+                            name: 'Creeps',
+                            color: 'orange',
+                            size: 1,
+                            children: [{
+                                name: 'First Blue Creep at 1 Mana',
+                                color: 'green',
+                                size: 1
+                            },
+                            ]
+                        },]
+                    }],
+            },
+            {
+                name: '4 Mana',
+                color: '#c1ca7d',
+                children: [
+                    {
+                        name: 'Red',
+                        color: '#c06d6d',
+                        size: 1,
+                        children: [{
+                            name: 'Spells',
+                            color: 'orange',
+                            size: 1,
+                            children: [{
+                                name: 'First Blue Spell at 1 Mana',
+                                color: 'green',
+                                size: 1
+                            },
+                            ]
+                        }, {
+                            name: 'Improvements',
+                            color: 'blue',
+                            size: 1, 
+                            children: [{
+                                name: 'First Blue Improvement at 1 Mana',
+                                color: 'green',
+                                size: 1
+                            },
+                            ]
+                        }, {
+                            name: 'Creeps',
+                            color: 'orange',
+                            size: 1,
+                            children: [{
+                                name: 'First Blue Creep at 1 Mana',
+                                color: 'green',
+                                size: 1
+                            },
+                            ]
+                        },]
+                    },
+                    {
+                        name: 'Black',
+                        color: '#888888',
+                        size: 1,
+                        children: [{
+                            name: 'Spells',
+                            color: 'orange',
+                            size: 1,
+                            children: [{
+                                name: 'First Blue Spell at 1 Mana',
+                                color: 'green',
+                                size: 1
+                            },
+                            ]
+                        }, {
+                            name: 'Improvements',
+                            color: 'blue',
+                            size: 1, 
+                            children: [{
+                                name: 'First Blue Improvement at 1 Mana',
+                                color: 'green',
+                                size: 1
+                            },
+                            ]
+                        }, {
+                            name: 'Creeps',
+                            color: 'orange',
+                            size: 1,
+                            children: [{
+                                name: 'First Blue Creep at 1 Mana',
+                                color: 'green',
+                                size: 1
+                            },
+                            ]
+                        },]
+                    },
+                    {
+                        name: 'Green',
+                        color: '#62b46d',
+                        size: 1,
+                        children: [{
+                            name: 'Spells',
+                            color: 'orange',
+                            size: 1,
+                            children: [{
+                                name: 'First Blue Spell at 1 Mana',
+                                color: 'green',
+                                size: 1
+                            },
+                            ]
+                        }, {
+                            name: 'Improvements',
+                            color: 'blue',
+                            size: 1, 
+                            children: [{
+                                name: 'First Blue Improvement at 1 Mana',
+                                color: 'green',
+                                size: 1
+                            },
+                            ]
+                        }, {
+                            name: 'Creeps',
+                            color: 'orange',
+                            size: 1,
+                            children: [{
+                                name: 'First Blue Creep at 1 Mana',
+                                color: 'green',
+                                size: 1
+                            },
+                            ]
+                        },]
+                    },
+                    {
+                        name: 'Blue',
+                        color: '#699bbc',
+                        size: 1,
+                        children: [{
+                            name: 'Spells',
+                            color: 'orange',
+                            size: 1,
+                            children: [{
+                                name: 'First Blue Spell at 1 Mana',
+                                color: 'green',
+                                size: 1
+                            },
+                            ]
+                        }, {
+                            name: 'Improvements',
+                            color: 'blue',
+                            size: 1, 
+                            children: [{
+                                name: 'First Blue Improvement at 1 Mana',
+                                color: 'green',
+                                size: 1
+                            },
+                            ]
+                        }, {
+                            name: 'Creeps',
+                            color: 'orange',
+                            size: 1,
+                            children: [{
+                                name: 'First Blue Creep at 1 Mana',
+                                color: 'green',
+                                size: 1
+                            },
+                            ]
+                        },]
+                    }],
+            },
+            {
+                name: '5 Mana',
+                color: '#c1ca7d',
+                children: [
+                    {
+                        name: 'Red',
+                        color: '#c06d6d',
+                        size: 1,
+                        children: [{
+                            name: 'Spells',
+                            color: 'orange',
+                            size: 1,
+                            children: [{
+                                name: 'First Blue Spell at 1 Mana',
+                                color: 'green',
+                                size: 1
+                            },
+                            ]
+                        }, {
+                            name: 'Improvements',
+                            color: 'blue',
+                            size: 1, 
+                            children: [{
+                                name: 'First Blue Improvement at 1 Mana',
+                                color: 'green',
+                                size: 1
+                            },
+                            ]
+                        }, {
+                            name: 'Creeps',
+                            color: 'orange',
+                            size: 1,
+                            children: [{
+                                name: 'First Blue Creep at 1 Mana',
+                                color: 'green',
+                                size: 1
+                            },
+                            ]
+                        },]
+                    },
+                    {
+                        name: 'Black',
+                        color: '#888888',
+                        size: 1,
+                        children: [{
+                            name: 'Spells',
+                            color: 'orange',
+                            size: 1,
+                            children: [{
+                                name: 'First Blue Spell at 1 Mana',
+                                color: 'green',
+                                size: 1
+                            },
+                            ]
+                        }, {
+                            name: 'Improvements',
+                            color: 'blue',
+                            size: 1, 
+                            children: [{
+                                name: 'First Blue Improvement at 1 Mana',
+                                color: 'green',
+                                size: 1
+                            },
+                            ]
+                        }, {
+                            name: 'Creeps',
+                            color: 'orange',
+                            size: 1,
+                            children: [{
+                                name: 'First Blue Creep at 1 Mana',
+                                color: 'green',
+                                size: 1
+                            },
+                            ]
+                        },]
+                    },
+                    {
+                        name: 'Green',
+                        color: '#62b46d',
+                        size: 1,
+                        children: [{
+                            name: 'Spells',
+                            color: 'orange',
+                            size: 1,
+                            children: [{
+                                name: 'First Blue Spell at 1 Mana',
+                                color: 'green',
+                                size: 1
+                            },
+                            ]
+                        }, {
+                            name: 'Improvements',
+                            color: 'blue',
+                            size: 1, 
+                            children: [{
+                                name: 'First Blue Improvement at 1 Mana',
+                                color: 'green',
+                                size: 1
+                            },
+                            ]
+                        }, {
+                            name: 'Creeps',
+                            color: 'orange',
+                            size: 1,
+                            children: [{
+                                name: 'First Blue Creep at 1 Mana',
+                                color: 'green',
+                                size: 1
+                            },
+                            ]
+                        },]
+                    },
+                    {
+                        name: 'Blue',
+                        color: '#699bbc',
+                        size: 1,
+                        children: [{
+                            name: 'Spells',
+                            color: 'orange',
+                            size: 1,
+                            children: [{
+                                name: 'First Blue Spell at 1 Mana',
+                                color: 'green',
+                                size: 1
+                            },
+                            ]
+                        }, {
+                            name: 'Improvements',
+                            color: 'blue',
+                            size: 1, 
+                            children: [{
+                                name: 'First Blue Improvement at 1 Mana',
+                                color: 'green',
+                                size: 1
+                            },
+                            ]
+                        }, {
+                            name: 'Creeps',
+                            color: 'orange',
+                            size: 1,
+                            children: [{
+                                name: 'First Blue Creep at 1 Mana',
+                                color: 'green',
+                                size: 1
+                            },
+                            ]
+                        },]
+                    }],
+            },
+            {
+                name: '6 Mana',
+                color: '#c1ca7d',
+                children: [
+                    {
+                        name: 'Red',
+                        color: '#c06d6d',
+                        size: 1,
+                        children: [{
+                            name: 'Spells',
+                            color: 'orange',
+                            size: 1,
+                            children: [{
+                                name: 'First Blue Spell at 1 Mana',
+                                color: 'green',
+                                size: 1
+                            },
+                            ]
+                        }, {
+                            name: 'Improvements',
+                            color: 'blue',
+                            size: 1, 
+                            children: [{
+                                name: 'First Blue Improvement at 1 Mana',
+                                color: 'green',
+                                size: 1
+                            },
+                            ]
+                        }, {
+                            name: 'Creeps',
+                            color: 'orange',
+                            size: 1,
+                            children: [{
+                                name: 'First Blue Creep at 1 Mana',
+                                color: 'green',
+                                size: 1
+                            },
+                            ]
+                        },]
+                    },
+                    {
+                        name: 'Black',
+                        color: '#888888',
+                        size: 1,
+                        children: [{
+                            name: 'Spells',
+                            color: 'orange',
+                            size: 1,
+                            children: [{
+                                name: 'First Blue Spell at 1 Mana',
+                                color: 'green',
+                                size: 1
+                            },
+                            ]
+                        }, {
+                            name: 'Improvements',
+                            color: 'blue',
+                            size: 1, 
+                            children: [{
+                                name: 'First Blue Improvement at 1 Mana',
+                                color: 'green',
+                                size: 1
+                            },
+                            ]
+                        }, {
+                            name: 'Creeps',
+                            color: 'orange',
+                            size: 1,
+                            children: [{
+                                name: 'First Blue Creep at 1 Mana',
+                                color: 'green',
+                                size: 1
+                            },
+                            ]
+                        },]
+                    },
+                    {
+                        name: 'Green',
+                        color: '#62b46d',
+                        size: 1,
+                        children: [{
+                            name: 'Spells',
+                            color: 'orange',
+                            size: 1,
+                            children: [{
+                                name: 'First Blue Spell at 1 Mana',
+                                color: 'green',
+                                size: 1
+                            },
+                            ]
+                        }, {
+                            name: 'Improvements',
+                            color: 'blue',
+                            size: 1, 
+                            children: [{
+                                name: 'First Blue Improvement at 1 Mana',
+                                color: 'green',
+                                size: 1
+                            },
+                            ]
+                        }, {
+                            name: 'Creeps',
+                            color: 'orange',
+                            size: 1,
+                            children: [{
+                                name: 'First Blue Creep at 1 Mana',
+                                color: 'green',
+                                size: 1
+                            },
+                            ]
+                        },]
+                    },
+                    {
+                        name: 'Blue',
+                        color: '#699bbc',
+                        size: 1,
+                        children: [{
+                            name: 'Spells',
+                            color: 'orange',
+                            size: 1,
+                            children: [{
+                                name: 'First Blue Spell at 1 Mana',
+                                color: 'green',
+                                size: 1
+                            },
+                            ]
+                        }, {
+                            name: 'Improvements',
+                            color: 'blue',
+                            size: 1, 
+                            children: [{
+                                name: 'First Blue Improvement at 1 Mana',
+                                color: 'green',
+                                size: 1
+                            },
+                            ]
+                        }, {
+                            name: 'Creeps',
+                            color: 'orange',
+                            size: 1,
+                            children: [{
+                                name: 'First Blue Creep at 1 Mana',
+                                color: 'green',
+                                size: 1
+                            },
+                            ]
+                        },]
+                    }],
+            },
+            {
+                name: '7 Mana',
+                color: '#c1ca7d',
+                children: [
+                    {
+                        name: 'Red',
+                        color: '#c06d6d',
+                        size: 1,
+                        children: [{
+                            name: 'Spells',
+                            color: 'orange',
+                            size: 1,
+                            children: [{
+                                name: 'First Blue Spell at 1 Mana',
+                                color: 'green',
+                                size: 1
+                            },
+                            ]
+                        }, {
+                            name: 'Improvements',
+                            color: 'blue',
+                            size: 1, 
+                            children: [{
+                                name: 'First Blue Improvement at 1 Mana',
+                                color: 'green',
+                                size: 1
+                            },
+                            ]
+                        }, {
+                            name: 'Creeps',
+                            color: 'orange',
+                            size: 1,
+                            children: [{
+                                name: 'First Blue Creep at 1 Mana',
+                                color: 'green',
+                                size: 1
+                            },
+                            ]
+                        },]
+                    },
+                    {
+                        name: 'Black',
+                        color: '#888888',
+                        size: 1,
+                        children: [{
+                            name: 'Spells',
+                            color: 'orange',
+                            size: 1,
+                            children: [{
+                                name: 'First Blue Spell at 1 Mana',
+                                color: 'green',
+                                size: 1
+                            },
+                            ]
+                        }, {
+                            name: 'Improvements',
+                            color: 'blue',
+                            size: 1, 
+                            children: [{
+                                name: 'First Blue Improvement at 1 Mana',
+                                color: 'green',
+                                size: 1
+                            },
+                            ]
+                        }, {
+                            name: 'Creeps',
+                            color: 'orange',
+                            size: 1,
+                            children: [{
+                                name: 'First Blue Creep at 1 Mana',
+                                color: 'green',
+                                size: 1
+                            },
+                            ]
+                        },]
+                    },
+                    {
+                        name: 'Green',
+                        color: '#62b46d',
+                        size: 1,
+                        children: [{
+                            name: 'Spells',
+                            color: 'orange',
+                            size: 1,
+                            children: [{
+                                name: 'First Blue Spell at 1 Mana',
+                                color: 'green',
+                                size: 1
+                            },
+                            ]
+                        }, {
+                            name: 'Improvements',
+                            color: 'blue',
+                            size: 1, 
+                            children: [{
+                                name: 'First Blue Improvement at 1 Mana',
+                                color: 'green',
+                                size: 1
+                            },
+                            ]
+                        }, {
+                            name: 'Creeps',
+                            color: 'orange',
+                            size: 1,
+                            children: [{
+                                name: 'First Blue Creep at 1 Mana',
+                                color: 'green',
+                                size: 1
+                            },
+                            ]
+                        },]
+                    },
+                    {
+                        name: 'Blue',
+                        color: '#699bbc',
+                        size: 1,
+                        children: [{
+                            name: 'Spells',
+                            color: 'orange',
+                            size: 1,
+                            children: [{
+                                name: 'First Blue Spell at 1 Mana',
+                                color: 'green',
+                                size: 1
+                            },
+                            ]
+                        }, {
+                            name: 'Improvements',
+                            color: 'blue',
+                            size: 1, 
+                            children: [{
+                                name: 'First Blue Improvement at 1 Mana',
+                                color: 'green',
+                                size: 1
+                            },
+                            ]
+                        }, {
+                            name: 'Creeps',
+                            color: 'orange',
+                            size: 1,
+                            children: [{
+                                name: 'First Blue Creep at 1 Mana',
+                                color: 'green',
+                                size: 1
+                            },
+                            ]
+                        },]
+                    }],
+            },
+            {
+                name: '8 Mana',
+                color: '#c1ca7d',
+                children: [
+                    {
+                        name: 'Red',
+                        color: '#c06d6d',
+                        size: 1,
+                        children: [{
+                            name: 'Spells',
+                            color: 'orange',
+                            size: 1,
+                            children: [{
+                                name: 'First Blue Spell at 1 Mana',
+                                color: 'green',
+                                size: 1
+                            },
+                            ]
+                        }, {
+                            name: 'Improvements',
+                            color: 'blue',
+                            size: 1, 
+                            children: [{
+                                name: 'First Blue Improvement at 1 Mana',
+                                color: 'green',
+                                size: 1
+                            },
+                            ]
+                        }, {
+                            name: 'Creeps',
+                            color: 'orange',
+                            size: 1,
+                            children: [{
+                                name: 'First Blue Creep at 1 Mana',
+                                color: 'green',
+                                size: 1
+                            },
+                            ]
+                        },]
+                    },
+                    {
+                        name: 'Black',
+                        color: '#888888',
+                        size: 1,
+                        children: [{
+                            name: 'Spells',
+                            color: 'orange',
+                            size: 1,
+                            children: [{
+                                name: 'First Blue Spell at 1 Mana',
+                                color: 'green',
+                                size: 1
+                            },
+                            ]
+                        }, {
+                            name: 'Improvements',
+                            color: 'blue',
+                            size: 1, 
+                            children: [{
+                                name: 'First Blue Improvement at 1 Mana',
+                                color: 'green',
+                                size: 1
+                            },
+                            ]
+                        }, {
+                            name: 'Creeps',
+                            color: 'orange',
+                            size: 1,
+                            children: [{
+                                name: 'First Blue Creep at 1 Mana',
+                                color: 'green',
+                                size: 1
+                            },
+                            ]
+                        },]
+                    },
+                    {
+                        name: 'Green',
+                        color: '#62b46d',
+                        size: 1,
+                        children: [{
+                            name: 'Spells',
+                            color: 'orange',
+                            size: 1,
+                            children: [{
+                                name: 'First Blue Spell at 1 Mana',
+                                color: 'green',
+                                size: 1
+                            },
+                            ]
+                        }, {
+                            name: 'Improvements',
+                            color: 'blue',
+                            size: 1, 
+                            children: [{
+                                name: 'First Blue Improvement at 1 Mana',
+                                color: 'green',
+                                size: 1
+                            },
+                            ]
+                        }, {
+                            name: 'Creeps',
+                            color: 'orange',
+                            size: 1,
+                            children: [{
+                                name: 'First Blue Creep at 1 Mana',
+                                color: 'green',
+                                size: 1
+                            },
+                            ]
+                        },]
+                    },
+                    {
+                        name: 'Blue',
+                        color: '#699bbc',
+                        size: 1,
+                        children: [{
+                            name: 'Spells',
+                            color: 'orange',
+                            size: 1,
+                            children: [{
+                                name: 'First Blue Spell at 1 Mana',
+                                color: 'green',
+                                size: 1
+                            },
+                            ]
+                        }, {
+                            name: 'Improvements',
+                            color: 'blue',
+                            size: 1, 
+                            children: [{
+                                name: 'First Blue Improvement at 1 Mana',
+                                color: 'green',
+                                size: 1
+                            },
+                            ]
+                        }, {
+                            name: 'Creeps',
+                            color: 'orange',
+                            size: 1,
+                            children: [{
+                                name: 'First Blue Creep at 1 Mana',
+                                color: 'green',
+                                size: 1
+                            },
+                            ]
+                        },]
+                    }],
+            },
         ]
     };
     Sunburst()
