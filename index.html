@@ -11,43 +11,58 @@
 <script>
 
     const data = {
-        name: '1 Mana',
-        color: '#c1ca7d',
-        children: [{
-            name: 'Red',
-            color: '#c06d6d',
-            size: 1
-        },{
-            name: 'Black',
-            color: '#888888',
-        },{ 
-            name: 'Green',
-            color: '#62b46d',
-            size: 1
-        },{ name: 'Blue',
-            color: '#699bbc',
-            size: 1
-            children: [{
-                name: 'Spells',
-                color: 'orange',
-                size: 1
-            }, {
-                name: 'Improvements',
-                color: 'blue',
-                children: [{
-                    name: 'First Blue Improvement at 1 Mana',
-                    color: 'green',
-                    size: 1
-                }, {
-                    name: 'Second Blue Improvement at 1 Mana',
-                    color: 'pink',
-                    size: 1
-                }]
-            name: '2 Mana',
-            color: 'gray',
-            children: [{    
-            }]
-        }]
+        color: 'white',
+        children: [
+            {
+                name: '1 Mana',
+                color: '#c1ca7d',
+                children: [
+                    {
+                        name: 'Red',
+                        color: '#c06d6d',
+                        size: 1
+                    },
+                    {
+                        name: 'Black',
+                        color: '#888888',
+                    },
+                    {
+                        name: 'Green',
+                        color: '#62b46d',
+                        size: 1
+                    },
+                    {
+                        name: 'Blue',
+                        color: '#699bbc',
+                        size: 1,
+                        children: [{
+                            name: 'Spells',
+                            color: 'orange',
+                            size: 1
+                        }, {
+                            name: 'Improvements',
+                            color: 'blue',
+                            children: [{
+                                name: 'First Blue Improvement at 1 Mana',
+                                color: 'green',
+                                size: 1
+                            }, {
+                                name: 'Second Blue Improvement at 1 Mana',
+                                color: 'pink',
+                                size: 1
+                            },
+                            ]
+                        }]
+                    }],
+            },
+            {
+                name: '2 Mana',
+                color: 'gray',
+                children:[
+                ]
+            }
+
+        ]
     };
     Sunburst()
         .data(data)
